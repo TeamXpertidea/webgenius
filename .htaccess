@@ -2,3 +2,7 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^(www\.)?wizebrains.org$ [NC]
 RewriteCond %{REQUEST_URI} !^/build/
 RewriteRule ^(.*)$ /build/$1 [L]
+# Redirect all requests to index.html except for existing files or directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [QSA,L]

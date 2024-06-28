@@ -17,3 +17,5 @@ jobs:
         server: ftp.wizebrains.org
         username: developer@wizebrains.org
         password: developer2024@@
+        server-dir: /public_html  # Replace with your server directory path
+        local-dir: build

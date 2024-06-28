@@ -1,5 +1,5 @@
 const Contact = () => {
-    return <h1>templates/pages/Contact.js har</h1>
+    return <h1>templates/pages/Contact.js haafafr</h1>
 }
 
 export default Contact;

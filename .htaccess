@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^(www\.)?wizebrains.org$ [NC]
+RewriteCond %{REQUEST_URI} !^/build/
+RewriteRule ^(.*)$ /build/$1 [L]
